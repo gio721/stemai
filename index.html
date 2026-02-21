@@ -2,74 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gallery</title>
+    <title>My Gallery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f6f6f6;
-            text-align: center;
-        }
-
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .gallery-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 10px;
-            padding: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .gallery-item {
-            width: 100%;
-            height: 120px;
-            background-color: #ccc;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 0.9rem;
-            color: #555;
-            border-radius: 8px;
-        }
-
-        footer {
-            margin-top: 30px;
-            padding: 10px;
-            font-size: 0.9rem;
-            color: #888;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
 <header>
-    📸 Gallery
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-<div class="gallery-container">
-    <div class="gallery-item">Image: Gallery</div>
-    <div class="gallery-item">Image: Gallery</div>
-    <div class="gallery-item">Image: Gallery</div>
-    <div class="gallery-item">Image: Gallery</div>
-    <div class="gallery-item">Image: Gallery</div>
-    <div class="gallery-item">Image: Gallery</div>
-    <div class="gallery-item">Image: Gallery</div>
-    <div class="gallery-item">Image: Gallery</div>
-    <div class="gallery-item">Image: Gallery</div>
-</div>
+<main>
+    <h1>My Gallery</h1>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/about1.jpg" alt="About 1">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/about2.jpg" alt="About 2">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/g1.jpg" alt="Gallery 1">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/h1.jpg" alt="Gallery 2">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/slider1.jpg" alt="Slider 1">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/slider2.jpg" alt="Slider 2">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/slider3.jpg" alt="Slider 3">
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/w1.jpeg" alt="Work 1">
+        </div>
+    </div>
+</main>
 
 <footer>
-    &copy; Your Gallery Page
+    <p>&copy; 2026 My Gallery</p>
 </footer>
 
 </body>
